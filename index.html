@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boosterrr | Animated Websites for Local US Businesses</title>
+  <meta name="description" content="Freelance web developer building fast, animated, high-converting websites for US dentists, roof and floor cleaners, HVAC pros, salons and other local businesses. Get a free homepage mockup.">
+  <meta name="theme-color" content="#070b10">
+  <!-- TODO after you deploy: add <link rel="canonical" href="YOUR-LIVE-URL">, og:url and og:image with your real site URL -->
+
+  <!-- Open Graph / Twitter (add og:url + a 1200x630 og:image after deploying) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boosterrr | Websites that turn local searches into booked customers">
+  <meta property="og:description" content="Fast, animated, mobile-first websites for local US businesses. Free homepage mockup.">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon (inline SVG, no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310d9a0'/%3E%3Cpath d='M18 44V20l14 16 14-16v24' fill='none' stroke='%2304130d' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts: Clash Display (Fontshare) + Inter (Google) -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org: update name, url, email, sameAs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Boosterrr",
+    "description": "Web design and development for local US small businesses: dentists, roof and floor cleaning, HVAC, salons and restaurants.",
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "serviceType": ["Web design", "Web development", "Local SEO"],
+    "priceRange": "$$",
+    "email": "coderbhanu070296@gmail.com",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Intro loader: pure CSS, hides itself after about 1.4s even without JS -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-brand">Boosterrr</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Boosterrr home">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#10d9a0"/><path d="M18 44V20l14 16 14-16v24" fill="none" stroke="#04130d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Boosterrr</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#niches">Who I help</a>
+        <a href="#work">Work</a>
+        <a href="#features">What you get</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-cta" href="#contact">Free mockup</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="top">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="grid-bg" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="pill" data-hero><span class="pill-dot"></span> Taking on new client projects</p>
+
+          <h1 id="hero-title">
+            <span class="w"><span>Websites</span></span>
+            <span class="w"><span>that</span></span>
+            <span class="w"><span>turn</span></span>
+            <span class="w"><span>local</span></span>
+            <span class="w"><span>searches</span></span>
+            <span class="w"><span>into</span></span>
+            <em><span class="w"><span class="grad">booked</span></span>
+            <span class="w"><span class="grad">customers.</span></span></em>
+          </h1>
+
+          <p class="hero-sub" data-hero>I design and build fast, animated websites for dentists, roof and floor cleaners, HVAC pros and other local businesses, so more visitors call, book and trust you.</p>
+
+          <div class="hero-cta" data-hero>
+            <a class="btn btn-primary" data-magnetic href="#work">See my work</a>
+            <a class="btn btn-ghost" data-magnetic href="#contact">Get a free mockup</a>
+          </div>
+
+          <ul class="hero-points" data-hero>
+            <li>Mobile-first</li>
+            <li>Loads in under 2 seconds</li>
+            <li>Local SEO built in</li>
+          </ul>
+        </div>
+
+        <!-- Floating mockups (decorative, filled by script.js) -->
+        <div class="hero-visual" aria-hidden="true" data-hero>
+          <div class="browser b-main">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">brightsmile-dental.com</span></div>
+            <div class="viewport"><div class="mock-page auto-scroll" data-site="dental"></div></div>
+          </div>
+          <div class="browser b-side">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">cleanpeak-roofing.com</span></div>
+            <div class="viewport"><div class="mock-page auto-scroll" data-site="roof"></div></div>
+          </div>
+          <div class="phone p-hero"><div class="phone-screen" data-site-phone="hvac"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee of niches served -->
+    <div class="marquee" aria-label="Industries served">
+      <div class="marquee-track">
+        <ul>
+          <li>Dentists</li><li>Roof Cleaning</li><li>Floor Cleaning</li><li>HVAC</li><li>Plumbers</li><li>Salons</li><li>Restaurants</li><li>Law Offices</li><li>Landscapers</li><li>Pressure Washing</li><li>Auto Detailing</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Dentists</li><li>Roof Cleaning</li><li>Floor Cleaning</li><li>HVAC</li><li>Plumbers</li><li>Salons</li><li>Restaurants</li><li>Law Offices</li><li>Landscapers</li><li>Pressure Washing</li><li>Auto Detailing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ 2. NICHES ============ -->
+    <section class="section" id="niches">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Who I help</p>
+          <h2 class="section-title">Built for the businesses that keep your neighborhood running</h2>
+          <p class="section-lead">Every industry wins customers differently. I build each site around how your customers actually search, compare and decide.</p>
+        </header>
+
+        <div class="niche-grid">
+          <article class="niche" data-reveal data-tilt style="--c:#14b8a6">
+            <div class="niche-icon" aria-hidden="true">🦷</div>
+            <h3>Dental Practices</h3>
+            <p>New-patient booking, insurance info, smile galleries and trust-building team pages.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Book visit</em></div>
+          </article>
+          <article class="niche" data-reveal data-tilt style="--c:#f97316">
+            <div class="niche-icon" aria-hidden="true">🏠</div>
+            <h3>Roof Cleaning</h3>
+            <p>Before/after galleries, instant quote forms and service-area pages that rank locally.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Get quote</em></div>
+          </article>
+          <article class="niche" data-reveal data-tilt style="--c:#8b5cf6">
+            <div class="niche-icon" aria-hidden="true">✨</div>
+            <h3>Floor Cleaning</h3>
+            <p>Clear service menus, photo proof and one-tap estimate requests for home and commercial jobs.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Estimate</em></div>
+          </article>
+          <article class="niche" data-reveal data-tilt style="--c:#2563eb">
+            <div class="niche-icon" aria-hidden="true">❄️</div>
+            <h3>HVAC &amp; Plumbing</h3>
+            <p>Emergency call buttons, maintenance plans and financing info that win urgent searches.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Call now</em></div>
+          </article>
+          <article class="niche" data-reveal data-tilt style="--c:#ec4899">
+            <div class="niche-icon" aria-hidden="true">💇</div>
+            <h3>Salons &amp; Spas</h3>
+            <p>Online booking, stylist profiles, price menus and a live feed of your best work.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Book now</em></div>
+          </article>
+          <article class="niche" data-reveal data-tilt style="--c:#d97706">
+            <div class="niche-icon" aria-hidden="true">🍝</div>
+            <h3>Restaurants</h3>
+            <p>Mouth-watering menus, reservations, online ordering links and event pages.</p>
+            <div class="mini" aria-hidden="true"><span></span><span></span><em>Reserve</em></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. DEMO SHOWCASE ============ -->
+    <section class="section section-tint" id="work">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Concept showcase</p>
+          <h2 class="section-title">See what your website could look like</h2>
+          <p class="section-lead">Concept sites for fictional businesses. Hover a browser (or scroll on mobile) to preview the full page.</p>
+        </header>
+
+        <!--
+          These cards link to the contact form for now. Once a demo is live, set its href to the
+          real URL and change the text back to "View live demo".
+        -->
+        <div class="demo-grid">
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">brightsmile-dental.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="dental"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="dental"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">Dental</span>
+              <h3>BrightSmile Dental</h3>
+              <p>Online booking, new-patient forms and a warm, trustworthy feel.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">cleanpeak-roofing.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="roof"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="roof"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">Roof Cleaning</span>
+              <h3>CleanPeak Roofing</h3>
+              <p>Before/after proof, instant quote form and service-area pages.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">freshfloorpros.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="floor"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="floor"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">Floor Cleaning</span>
+              <h3>FreshFloor Pros</h3>
+              <p>Clear service menu, gallery and one-tap estimate requests.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">coolbreeze-hvac.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="hvac"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="hvac"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">HVAC</span>
+              <h3>CoolBreeze HVAC</h3>
+              <p>24/7 emergency call button, maintenance plans and financing.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">lunahairstudio.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="salon"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="salon"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">Salon</span>
+              <h3>Luna Hair Studio</h3>
+              <p>Stylish booking flow, stylist profiles and a service price menu.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="demo-card" data-reveal data-tilt>
+            <div class="demo-visual">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">emberandoak.com</span></div>
+                <div class="viewport"><div class="mock-page" data-site="restaurant"></div></div>
+              </div>
+              <div class="phone"><div class="phone-screen" data-site-phone="restaurant"></div></div>
+            </div>
+            <div class="demo-info">
+              <span class="tag">Restaurant</span>
+              <h3>Ember &amp; Oak</h3>
+              <p>Moody menu showcase with reservations and online ordering links.</p>
+              <a class="link-arrow" href="#contact">Get a site like this <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. WHAT YOU GET ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">What you get</p>
+          <h2 class="section-title">Everything a local website needs to win customers</h2>
+          <p class="section-lead">No bloated extras. Just the pieces that make the phone ring and the calendar fill.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">⚡</div>
+            <h3>Lightning-fast load speed</h3>
+            <p>Optimized images and clean code, because slow sites lose customers before they see your offer.</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">📱</div>
+            <h3>Mobile-first design</h3>
+            <p>Most of your customers search on a phone. Your site is designed for thumbs first.</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">📍</div>
+            <h3>Local SEO foundation</h3>
+            <p>Smart titles, schema markup and service-area pages so you show up when locals search.</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">📅</div>
+            <h3>Online booking</h3>
+            <p>Let customers book or request a quote at midnight, without waiting for you to answer.</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">⭐</div>
+            <h3>Google reviews on-site</h3>
+            <p>Show your best reviews right on the page to turn visitors into confident buyers.</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="f-icon" aria-hidden="true">📞</div>
+            <h3>Click-to-call everywhere</h3>
+            <p>A sticky call button on mobile makes it effortless to reach you in one tap.</p>
+          </article>
+          <article class="feature feature-wide" data-reveal>
+            <div class="f-icon" aria-hidden="true">🗺️</div>
+            <div>
+              <h3>Google Business Profile setup</h3>
+              <p>I set up and optimize your Google Business Profile so your website and your map listing work together to bring in calls.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. RESULTS / PROOF ============ -->
+    <section class="section section-dark" id="results">
+      <div class="aurora aurora-soft" aria-hidden="true"><span></span><span></span></div>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow-light">What I build every site to deliver</p>
+          <h2 class="section-title">Targets I design, build and test against</h2>
+          <!-- PLACEHOLDER STATS: replace with real client results as soon as you have them. -->
+        </header>
+
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <div class="stat-num"><span data-count="95" data-suffix="+">95+</span></div>
+            <p>PageSpeed score target</p>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat-num"><span data-count="2" data-prefix="&lt;" data-suffix="s">&lt;2s</span></div>
+            <p>Page load time goal</p>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat-num"><span data-count="40" data-prefix="+" data-suffix="%">+40%</span></div>
+            <p>More enquiry calls, our goal</p>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat-num"><span data-count="24" data-suffix="h">24h</span></div>
+            <p>Reply time on every message</p>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER TESTIMONIALS: swap in real quotes, names and businesses. -->
+        <div class="testimonials">
+          <figure class="quote" data-reveal>
+            <span class="sample-badge">Sample</span>
+            <blockquote>"Our old site never brought in a single call. The new one feels like a different business."</blockquote>
+            <figcaption>Sample Name <span>Dental Practice Owner</span></figcaption>
+          </figure>
+          <figure class="quote" data-reveal>
+            <span class="sample-badge">Sample</span>
+            <blockquote>"The quote form alone paid for the website in the first month."</blockquote>
+            <figcaption>Sample Name <span>Roof Cleaning Company</span></figcaption>
+          </figure>
+          <figure class="quote" data-reveal>
+            <span class="sample-badge">Sample</span>
+            <blockquote>"Clear communication, fast turnaround, and it looks incredible on a phone."</blockquote>
+            <figcaption>Sample Name <span>Floor Care Business</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 class="section-title">From first call to live website in four simple steps</h2>
+        </header>
+
+        <ol class="timeline">
+          <span class="timeline-line" aria-hidden="true"><span class="timeline-fill"></span></span>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true">1</span>
+            <div class="step-body">
+              <h3>Discovery</h3>
+              <p>A short call to learn your services, your best customers and what makes you the obvious choice locally.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true">2</span>
+            <div class="step-body">
+              <h3>Design mockup</h3>
+              <p>You see a real homepage design before you commit to the full build. No guessing, no surprises.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true">3</span>
+            <div class="step-body">
+              <h3>Build</h3>
+              <p>I build, animate and optimize the site, then connect booking, reviews, call buttons and SEO.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true">4</span>
+            <div class="step-body">
+              <h3>Launch + support</h3>
+              <p>We go live together, and I stay on to handle updates, fixes and small edits as you grow.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 7. PRICING ============ -->
+    <section class="section section-tint" id="pricing">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Pricing</p>
+          <h2 class="section-title">Simple packages, no hidden fees</h2>
+          <p class="section-lead">Prices in USD. After a free call you get one fixed quote. 50% to start, 50% at launch.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="plan" data-reveal>
+            <h3>Starter</h3>
+            <p class="plan-for">Get online fast</p>
+            <p class="price"><small>from</small> $900</p>
+            <ul>
+              <li>Up to 5 pages</li>
+              <li>Mobile responsive design</li>
+              <li>Contact form + click-to-call</li>
+              <li>Basic on-page SEO</li>
+              <li>Google Maps embed</li>
+              <li>2 rounds of revisions</li>
+            </ul>
+            <a class="btn btn-outline" data-magnetic href="#contact">Choose Starter</a>
+          </article>
+
+          <article class="plan plan-featured" data-reveal>
+            <span class="plan-badge">Most popular</span>
+            <h3>Growth</h3>
+            <p class="plan-for">For businesses ready to get more leads</p>
+            <p class="price"><small>from</small> $2,200</p>
+            <ul>
+              <li>Up to 8 pages</li>
+              <li>Scroll animations &amp; micro-interactions</li>
+              <li>Online booking integration</li>
+              <li>Google reviews on-site</li>
+              <li>Local SEO setup</li>
+              <li>Google Business Profile setup</li>
+              <li>Speed optimization</li>
+              <li>3 rounds of revisions</li>
+            </ul>
+            <a class="btn btn-primary" data-magnetic href="#contact">Choose Growth</a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <h3>Premium</h3>
+            <p class="plan-for">A fully custom brand experience</p>
+            <p class="price"><small>from</small> $4,500</p>
+            <ul>
+              <li>8+ pages, fully custom design</li>
+              <li>Advanced animations</li>
+              <li>Blog / CMS you can edit</li>
+              <li>Service-area landing pages</li>
+              <li>Analytics &amp; conversion tracking</li>
+              <li>Website copywriting</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-outline" data-magnetic href="#contact">Choose Premium</a>
+          </article>
+        </div>
+
+        <div class="care" data-reveal>
+          <div>
+            <h3>Monthly Care Plan <span>from $99/month</span></h3>
+            <p>Hosting, security updates, backups, uptime monitoring and small content edits, so your site stays fast and safe while you run your business.</p>
+          </div>
+          <a class="btn btn-dark" data-magnetic href="#contact">Add care plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq-wrap">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Questions business owners ask me</h2>
+        </header>
+
+        <div class="faq" data-reveal>
+          <details name="faq" open>
+            <summary>How long does it take?</summary>
+            <p>Starter sites usually take 1 to 2 weeks, Growth sites 2 to 4 weeks, and Premium builds 4 to 6 weeks. Timelines move fastest when you send photos and text promptly.</p>
+          </details>
+          <details name="faq">
+            <summary>Who owns the website and domain?</summary>
+            <p>You do. Once the final payment is made, the design, code and domain are yours. I never lock you in.</p>
+          </details>
+          <details name="faq">
+            <summary>What about hosting?</summary>
+            <p>I set up fast, reliable hosting for you. You can pay the host directly (usually $10 to $25 a month) or have it handled in the Monthly Care Plan.</p>
+          </details>
+          <details name="faq">
+            <summary>How many revisions are included?</summary>
+            <p>Starter includes 2 rounds, Growth and Premium include 3. Because you approve a design mockup first, most projects need far fewer.</p>
+          </details>
+          <details name="faq">
+            <summary>Will I rank #1 on Google?</summary>
+            <p>No honest developer can promise that. What I do is build a strong local SEO foundation: fast speed, clean structure, schema markup, service-area pages and Google Business Profile setup, so you have the best possible chance.</p>
+          </details>
+          <details name="faq">
+            <summary>How does payment work?</summary>
+            <p>50% upfront to reserve your spot and 50% when the site is approved, before it goes live. Care plans are billed monthly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="aurora aurora-soft" aria-hidden="true"><span></span><span></span></div>
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">Let's talk</p>
+            <h2 class="section-title">Get a free homepage mockup for your business</h2>
+            <p class="section-lead">Tell me a bit about your business and I'll reply within 24 hours with ideas, a fixed quote and a free homepage concept.</p>
+            <ul class="contact-list">
+              <li><span aria-hidden="true">✉️</span> <a href="mailto:coderbhanu070296@gmail.com">coderbhanu070296@gmail.com</a></li>
+              <li><span aria-hidden="true">📅</span> <a href="https://calendly.com/coderbhanu070296/30min" target="_blank" rel="noopener">Book a 30-min call</a></li>
+            </ul>
+            <a class="btn btn-ghost" data-magnetic href="https://calendly.com/coderbhanu070296/30min" target="_blank" rel="noopener">Book a 30-min call</a>
+          </div>
+
+          <!-- Form needs a free form-handling service (a static site cannot send email by itself). See README:
+         paste your Formspree ID into the action below. Until then, visitors get "Open in Gmail" / email-app buttons. -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label>Your name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Business name
+              <input type="text" name="business" autocomplete="organization" required>
+            </label>
+            <label>Phone
+              <input type="tel" name="phone" autocomplete="tel" inputmode="tel">
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <div class="form-row">
+              <label>Type of website
+                <select name="website_type" required>
+                  <option value="">Select…</option>
+                  <option>Dental</option>
+                  <option>Roof / Floor Cleaning</option>
+                  <option>HVAC / Plumbing</option>
+                  <option>Salon / Spa</option>
+                  <option>Restaurant</option>
+                  <option>Law Office</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>Budget range
+                <select name="budget" required>
+                  <option value="">Select…</option>
+                  <option>$900 – $1,500</option>
+                  <option>$1,500 – $3,000</option>
+                  <option>$3,000 – $5,000</option>
+                  <option>$5,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit" data-magnetic>Send my request</button>
+            <p class="form-note">I only use your details to reply to you. No spam, ever.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 10. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#top" aria-label="Back to top">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#10d9a0"/><path d="M18 44V20l14 16 14-16v24" fill="none" stroke="#04130d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Boosterrr</span>
+        </a>
+        <p class="footer-line">Made in India, serving clients across the USA.</p>
+      </div>
+      <ul class="socials">
+        <!-- <li><a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://instagram.com/your-handle" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/your-handle" target="_blank" rel="noopener">X</a></li> -->
+        <li><a href="https://aiengbhanu-tech.github.io/" target="_blank" rel="noopener">Portfolio</a></li>
+      </ul>
+      <p class="copyright">© <span id="year">2026</span> Boosterrr. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="fab" id="fab" href="#contact">Get a free quote</a>
+
+  <!-- Libraries (all with graceful fallbacks if a CDN is blocked) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
